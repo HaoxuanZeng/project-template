@@ -1,6 +1,0 @@
-name: example-env
-channels:
-  - conda-forge
-dependencies:
-  - python=3.14
-  - signac

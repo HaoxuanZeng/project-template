@@ -1,5 +1,11 @@
 [workspace]
+path = "../data/workspace"
 value_file = "signac_statepoint.json"
 
 [default.action]
-command = "python scripts/actions.py --action $ACTION_NAME {directories}"
+command = "bash -c 'cd ../data && exec ../target/release/actions \"$@\"' -- $ACTION_NAME {directories}"
+
+[[action]]
+name = "simulate"
+group.maximum_size = 1
+

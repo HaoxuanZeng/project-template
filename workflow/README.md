@@ -1,6 +1,9 @@
 ```bash
-signac init
-python scripts/populate_workspace.py
+cargo build --release --bins
+```
+
+```bash
+(cd ../data && ../target/release/populate_workspace)
 ```
 
 ```bash
