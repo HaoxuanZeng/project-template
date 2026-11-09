@@ -1,5 +1,4 @@
 ```bash
-signac init
 python scripts/populate_workspace.py
 ```
 
