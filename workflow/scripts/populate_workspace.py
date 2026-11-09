@@ -7,8 +7,7 @@ from pathlib import Path
 import signac
 
 ROOT = Path(__file__).resolve().parents[2]
-
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.append(str(ROOT / "src"))
 
 from state_point import StatePoint
 
@@ -16,7 +15,6 @@ from state_point import StatePoint
 def main() -> None:
     project = signac.init_project(path=str(ROOT / "data"))
 
-    # The same three state points used in the tutorial.
     for temperature, replicate in [(1.0, 0), (1.0, 1), (0.7, 0)]:
         state_point = StatePoint(
             n=1_000,
