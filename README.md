@@ -1,6 +1,6 @@
 # Project Name
 
-<!-- Specify the purpose of the project. -->>
+<!-- Specify the purpose of the project. -->
 
 ## Getting Started
 
