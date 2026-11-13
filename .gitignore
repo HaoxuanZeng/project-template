@@ -1,3 +1,10 @@
+# Local signac and row metadata
+.signac/
+.row/
+
+# Generated simulation data
+*.gsd
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
